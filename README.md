@@ -1,14 +1,19 @@
-# 🔐 AureaClavis Steganography CLI
+# Java Image Steganography
 
-AureaClavis is a simple command-line Java tool for **hiding secret messages inside images** using **LSB (Least Significant Bit) steganography**. Designed for educational, experimental, or lightweight cryptographic use.
+Hide and extract text inside images using LSB technique.
 
----
+## Files
+Encryption.java – embed message  
+Decryption.java – extract message  
 
-## 📌 Features
+## Compile
+javac Encryption.java Decryption.java
 
-- 🔐 Embed secret text inside `.png` or `.bmp` images  
-- 🧬 Uses LSB (Least Significant Bit) encoding technique  
-- 📁 Outputs a new image with the hidden data  
-- 🖥️ Command-line interface for easy scripting  
-- 🚫 No third-party libraries — pure Java
+## Encrypt
+java Encryption <input_image_path> "<message_to_hide>" <output_image_path>
 
+## Decrypt
+java Decryption
+
+## Notes
+Use PNG/BMP images only.
